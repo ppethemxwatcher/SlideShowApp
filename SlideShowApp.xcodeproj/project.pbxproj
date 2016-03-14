@@ -12,6 +12,10 @@
 		EC4AD8151A54C7C30026727E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8131A54C7C30026727E /* Main.storyboard */; };
 		EC4AD8171A54C7C30026727E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8161A54C7C30026727E /* Assets.xcassets */; };
 		EC4AD81A1A54C7C30026727E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8181A54C7C30026727E /* LaunchScreen.storyboard */; };
+		EC4AD8251A54C7D50026727E /* slideimage_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8211A54C7D50026727E /* slideimage_1.jpg */; };
+		EC4AD8261A54C7D50026727E /* slideimage_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8221A54C7D50026727E /* slideimage_2.jpg */; };
+		EC4AD8271A54C7D50026727E /* slideimage_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8231A54C7D50026727E /* slideimage_3.jpg */; };
+		EC4AD8281A54C7D50026727E /* slideimage_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8241A54C7D50026727E /* slideimage_4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		EC4AD8161A54C7C30026727E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC4AD8191A54C7C30026727E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC4AD81B1A54C7C30026727E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4AD8211A54C7D50026727E /* slideimage_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slideimage_1.jpg; sourceTree = "<group>"; };
+		EC4AD8221A54C7D50026727E /* slideimage_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slideimage_2.jpg; sourceTree = "<group>"; };
+		EC4AD8231A54C7D50026727E /* slideimage_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slideimage_3.jpg; sourceTree = "<group>"; };
+		EC4AD8241A54C7D50026727E /* slideimage_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slideimage_4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		EC4AD80E1A54C7C30026727E /* SlideShowApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC4AD8211A54C7D50026727E /* slideimage_1.jpg */,
+				EC4AD8221A54C7D50026727E /* slideimage_2.jpg */,
+				EC4AD8231A54C7D50026727E /* slideimage_3.jpg */,
+				EC4AD8241A54C7D50026727E /* slideimage_4.jpg */,
 				EC4AD80F1A54C7C30026727E /* AppDelegate.swift */,
 				EC4AD8111A54C7C30026727E /* ViewController.swift */,
 				EC4AD8131A54C7C30026727E /* Main.storyboard */,
@@ -124,7 +136,11 @@
 			files = (
 				EC4AD81A1A54C7C30026727E /* LaunchScreen.storyboard in Resources */,
 				EC4AD8171A54C7C30026727E /* Assets.xcassets in Resources */,
+				EC4AD8281A54C7D50026727E /* slideimage_4.jpg in Resources */,
 				EC4AD8151A54C7C30026727E /* Main.storyboard in Resources */,
+				EC4AD8261A54C7D50026727E /* slideimage_2.jpg in Resources */,
+				EC4AD8251A54C7D50026727E /* slideimage_1.jpg in Resources */,
+				EC4AD8271A54C7D50026727E /* slideimage_3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
