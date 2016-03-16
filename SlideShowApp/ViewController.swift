@@ -11,11 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-
     @IBOutlet weak var BackBtn: UIButton!
     @IBOutlet weak var SlideShowBtn: UIButton!
     @IBOutlet weak var NextBtn: UIButton!
 
+//タイマー
+    weak var timer:NSTimer!
+
+//手動送り用
+    var i = 0
+    
 //画像の配列
     let slideImages = [
         UIImage (named: "slideimage_1.jpg")!,
@@ -28,7 +33,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-//slideimage_1.jpgから表示
+//slideimage_1.jpgから表示、ボタン名
         imageView.image = slideImages[0]
         SlideShowBtn.setTitle("再生 >", forState: UIControlState.Normal)
         SlideShowBtn.addTarget(self, action: "Play:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -47,44 +52,39 @@ class ViewController: UIViewController {
     //参考にしたものhttps://sites.google.com/a/gclue.jp/swift-docs/ni-yinki100-ios/2-utility/taimawo-zhimeru
     //参考にしたものhttp://tiny-wing.hatenablog.com/entry/2015/11/04/092413
     
-    
-    //タイマー
-    weak var timer:NSTimer?
-    
-    //タイマースタートセット
+    //タイマーが呼び出すもの
     @IBAction func Play(sender: UIButton) {
 
         //タイマーが動いているかチェック
-            if timer?.valid == false {
+        //タイマーが動いているなら
+            if timer?.valid == true {
                 
-        //タイマーを動かす --　動かない・・・selectorをupdate:にしてみた
-        timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "update", userInfo: nil, repeats: true)
-        
-        //停止ボタンに変更
-        SlideShowBtn.setTitle("停止", forState: UIControlState.Normal)
+                //タイマーを止める
+                timer.invalidate()
                 
-        //他のボタンを無効に
-        BackBtn.enabled = false
-        NextBtn.enabled = false
-        
+                //再生ボタンに変更
+                SlideShowBtn.setTitle("再生 >", forState: UIControlState.Normal)
+                
+                //他のボタンを有効に
+                BackBtn.enabled = true
+                NextBtn.enabled = true
         }
         else {
-        //タイマーを止める
-        timer?.invalidate()
-
-        //再生ボタンに変更
-        SlideShowBtn.setTitle("再生 >", forState: UIControlState.Normal)
+                //タイマーを動かす --　動かない・・・selectorをupdate:にしてみた
+                timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "update:", userInfo: nil, repeats: true)
                 
-        //他のボタンを有効に
-        BackBtn.enabled = true
-        NextBtn.enabled = true
+                //停止ボタンに変更
+                SlideShowBtn.setTitle("停止", forState: UIControlState.Normal)
                 
+                //他のボタンを無効に
+                BackBtn.enabled = false
+                NextBtn.enabled = false
         }
 }
 
-    var i = 0
+
     
-//スライドショー開始（下のnxbtnと同じ？？）--- 未完成
+//スライドショー開始
     func update(timer: NSTimer) {
         let slideNum = slideImages.count
         i += 1

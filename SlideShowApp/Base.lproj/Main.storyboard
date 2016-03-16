@@ -19,21 +19,21 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waL-A3-OCi">
                                 <rect key="frame" x="71" y="497" width="53" height="30"/>
-                                <state key="normal" title="|&lt;  戻る"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="bkbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKf-Mp-Lhz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovq-yT-qyZ">
-                                <rect key="frame" x="283" y="497" width="44" height="30"/>
-                                <state key="normal" title="再生 &gt;"/>
+                                <rect key="frame" x="270" y="497" width="57" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXa-cW-cd0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-zb-Tzu">
                                 <rect key="frame" x="474" y="497" width="49" height="30"/>
-                                <state key="normal" title="進む &gt;|"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="nxbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="njD-92-ZuG"/>
                                 </connections>
@@ -54,6 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="703" y="670"/>
         </scene>
     </scenes>
 </document>
