@@ -24,6 +24,9 @@ class ZoomViewController: UIViewController {
         //ViewControllerから受け取った画像
         ZoomImageView.image = ZoomImage
         
+        //RtnBtnの名前
+        RtnBtn.setTitle("戻る", forState: UIControlState.Normal)
+        
     
     }
 

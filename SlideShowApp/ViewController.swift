@@ -133,6 +133,10 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         }
         imageView.image = slideImages[i]
         }
+//ZVCから戻って来る
+    @IBAction func unwind(segue: UIStoryboardSegue){
+    
+    }
 }
 
 

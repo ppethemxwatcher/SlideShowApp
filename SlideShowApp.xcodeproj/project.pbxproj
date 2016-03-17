@@ -72,8 +72,8 @@
 				EC4AD8111A54C7C30026727E /* ViewController.swift */,
 				EC4AD8131A54C7C30026727E /* Main.storyboard */,
 				EC9B731C1C998DED004074B7 /* ZoomViewController.swift */,
-				EC4AD8161A54C7C30026727E /* Assets.xcassets */,
 				EC4AD8181A54C7C30026727E /* LaunchScreen.storyboard */,
+				EC4AD8161A54C7C30026727E /* Assets.xcassets */,
 				EC4AD81B1A54C7C30026727E /* Info.plist */,
 			);
 			path = SlideShowApp;
