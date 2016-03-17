@@ -33,12 +33,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-//slideimage_1.jpgから表示、ボタン名
+        //slideimage_1.jpgから表示、ボタン名
         imageView.image = slideImages[0]
+        //imageViewにタップアクション追加
+        imageView.userInteractionEnabled = true
+        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:Selector ("imageTapped:")))
         SlideShowBtn.setTitle("再生 >", forState: UIControlState.Normal)
         SlideShowBtn.addTarget(self, action: "Play:", forControlEvents: UIControlEvents.TouchUpInside)
         BackBtn.setTitle("|< 戻る", forState: UIControlState.Normal)
         NextBtn.setTitle("進む >|", forState: UIControlState.Normal)
+
     }
  
     override func didReceiveMemoryWarning() {
@@ -46,11 +50,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//タップして画面遷移（未着手）
+        //タップイベント
+    func imageTapped(sender: UITapGestureRecognizer){
+        
+        // ZoomViewController へ遷移するために Segue を呼び出す
+        performSegueWithIdentifier("GoToZVC",sender: nil)
+        
+        
+    }
+
+// Segue 準備
+override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    if (segue.identifier == "GoToZVC") {
+        let zoomViewController: ZoomViewController = segue.destinationViewController as! ZoomViewController
+        
+        zoomViewController.ZoomImage = imageView.image!
+    }
+}
+
     
-//タイマーを使ってスライドショーを作る --- 未完成
-    //参考にしたものhttps://sites.google.com/a/gclue.jp/swift-docs/ni-yinki100-ios/2-utility/taimawo-zhimeru
-    //参考にしたものhttp://tiny-wing.hatenablog.com/entry/2015/11/04/092413
+//タイマーを使ってスライドショーを作る
     
     //タイマーが呼び出すもの
     @IBAction func Play(sender: UIButton) {
@@ -114,6 +133,6 @@ class ViewController: UIViewController {
         }
         imageView.image = slideImages[i]
         }
-    
 }
+
 

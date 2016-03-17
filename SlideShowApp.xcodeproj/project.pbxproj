@@ -16,6 +16,7 @@
 		EC4AD8261A54C7D50026727E /* slideimage_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8221A54C7D50026727E /* slideimage_2.jpg */; };
 		EC4AD8271A54C7D50026727E /* slideimage_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8231A54C7D50026727E /* slideimage_3.jpg */; };
 		EC4AD8281A54C7D50026727E /* slideimage_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4AD8241A54C7D50026727E /* slideimage_4.jpg */; };
+		EC9B731D1C998DED004074B7 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B731C1C998DED004074B7 /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EC4AD8221A54C7D50026727E /* slideimage_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slideimage_2.jpg; sourceTree = "<group>"; };
 		EC4AD8231A54C7D50026727E /* slideimage_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slideimage_3.jpg; sourceTree = "<group>"; };
 		EC4AD8241A54C7D50026727E /* slideimage_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slideimage_4.jpg; sourceTree = "<group>"; };
+		EC9B731C1C998DED004074B7 /* ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				EC4AD80F1A54C7C30026727E /* AppDelegate.swift */,
 				EC4AD8111A54C7C30026727E /* ViewController.swift */,
 				EC4AD8131A54C7C30026727E /* Main.storyboard */,
+				EC9B731C1C998DED004074B7 /* ZoomViewController.swift */,
 				EC4AD8161A54C7C30026727E /* Assets.xcassets */,
 				EC4AD8181A54C7C30026727E /* LaunchScreen.storyboard */,
 				EC4AD81B1A54C7C30026727E /* Info.plist */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4AD8121A54C7C30026727E /* ViewController.swift in Sources */,
+				EC9B731D1C998DED004074B7 /* ZoomViewController.swift in Sources */,
 				EC4AD8101A54C7C30026727E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +304,7 @@
 				EC4AD8201A54C7C30026727E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
